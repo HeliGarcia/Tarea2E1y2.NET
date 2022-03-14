@@ -44,6 +44,10 @@ namespace Tarea2.Ejercicio1
         {
             List<Pelicula> listaOrdenada = new List<Pelicula>();
             Estante.OrderBy(nombre => nombre._nombre);
+            foreach (Pelicula peli in Estante)
+            {
+                listaOrdenada.Add(peli);
+            }
             Console.WriteLine("\nSe ordenaron las películas en orden alfabetico.\n");
             return listaOrdenada;
         }
