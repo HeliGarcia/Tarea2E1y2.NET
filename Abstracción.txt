@@ -1,0 +1,65 @@
+Ejercicio 1
+
+Clases a crear:
+-Película
+-Organizador
+
+Clase Pelicula:
+-String nombre;
+-String genero;
+
+Métodos:
+-public Pelicula(string nombre, string genero)
+-getters & setters.
+-toString()
+
+Clase Organizador:
+-int _limitePeliculas;
+-int _numeroActualPeliculas;
+-List<Pelicula> Estante = new List<Pelicula>();
+
+Métodos:
+-public Organizador(int limitePeliculas)
+-public void agregarPelicula(Pelicula peli)
+-public List<Pelicula> ordenarAlfabeticamente()
+-public Boolean lleno()
+-public void Eliminar(Pelicula peli)
+-public void MostrarPelis(Lista<Pelicula> Estante)
+
+
+Ejercicio 2
+
+Clases a crear:
+-Producto
+-Venta
+-Contador
+
+Clase Producto:
+-String nombre;
+-String categoria;
+-double precio;
+-int existencias;
+
+Métodos:
+-public Producto(string nombre, string categoria, double precio, int existencias)
+-getters & setters.
+-public string toString()
+
+Clase Venta:
+Importa clase Producto.
+-Producto producto;
+-int cantidad;
+
+Métodos:
+-public Venta(Producto producto, int cantidad)
+-getters & setters.
+
+Clase Contador:
+Importa clases Producto y Venta.
+-List<Producto> productos;
+-List<Venta> ventas;
+
+Métodos:
+-public Contador()
+-public List<int> calcularVentasXProducto()
+-public void imprimirTotales(List<int> totales)
