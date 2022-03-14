@@ -8,6 +8,8 @@ namespace Tarea2.Ejercicio2
 {
     internal class Contador
     {
+        
+        private List<Venta> listaVentas = new List<Venta>();
 
     }
 }

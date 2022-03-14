@@ -9,8 +9,8 @@ namespace Tarea2.Ejercicio2
 {
     internal class Venta
     {
-        protected Producto _producto;
-        protected int _cantidad;
+        private Producto _producto;
+        private int _cantidad;
 
         public Venta(Producto producto, int cantidad)
         {
@@ -18,6 +18,16 @@ namespace Tarea2.Ejercicio2
             _cantidad = cantidad;
         }
 
-        public
+        public Producto Producto
+        {
+            get { return _producto; }
+            set { _producto = value; }
+        }
+
+        public int Cantidad
+        {
+            get { return _cantidad; }
+            set { _cantidad = value; }
+        }
     }
 }
